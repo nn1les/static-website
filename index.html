@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>static-website</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width: device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+            font-family: Times New Roman;
+        }
+
+        @media (min-width: 1500px) {
+            body {
+                background-color: antiquewhite;
+            }
+        }
+
+        @media (max-width: 1499px) {
+            body {
+                background-color: cornflowerblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Заголовок 1</h1>
+    <h2>Заголовок 2</h2>
+    <h3 style="color: red; text-align: center; font-family: Times New Roman;">Заголовок 3</h3>
+    <div class="alert alert-info" role="alert">
+        Простое уведомление info — проверьте!
+    </div>
+    Номерованный список:
+    <ol>
+        <li>Элемент 1</li>
+        <li>Элемент 2</li>
+    </ol>
+    Маркированный список:
+    <ul>
+        <li>Элемент 1</li>
+        <li>Элемент 2</li>
+    </ul>
+    <img src="img/tomas.jpg" alt="Tomas Shelby" width="250" height="300">
+    <br>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Океан</th>
+                <th>Средняя глубина</th>
+                <th>Максимальная глубина</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Тихий океан</td>
+                <td>4.280 м</td>
+                <td>10.911 м</td>
+            </tr>
+            <tr>
+                <td>Атлантически океан</td>
+                <td>3.646 м</td>
+                <td>8.486 м</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form>
+        <input type="text" placeholder="Введите имя:" name="name" />
+        <input type="submit">
+    </form>
+    <br>
+    <form>
+        <div>
+            <input name="name" type="text" placeholder="Введите имя:">
+            <input name="password" type="password" placeholder="Введите пароль:">
+        </div>
+        <br>
+        <div>
+            Какой твой любимый цвет?
+            <input name="color" type="radio" value="White"> Белый
+            <input name="color" type="radio" value="Blue"> Синий
+            <input name="color" type="radio" value="Red"> Красный
+        </div>
+        <br>
+        <div>
+            <input name="country" list="countries" placeholder="Страна">
+            <datalist id="countries">
+                <option value="Россия">
+                <option value="Украина">
+                <option value="Казахстан">
+            </datalist>
+        </div>
+    </form>
+    <br>
+    <div style="background: orange; color: black; width: 175px; height: 150px; padding: 20px; margin: 20px;">
+        Привет, мир!
+    </div>
+    <br>
+    <div style="border: 2px solid black; font-family: Times New Roman, sans-serif; font-size: 28px; font-weight: bold;">
+        Привет, мир!
+    </div>
+    <br>
+    Привет, мир!
+    <h1 id="foo">Заголовок 1</h1>
+    <h1 class="baz">Заголовок 1</h1>
+    Список:
+    <ol id="ol1">
+        <li>Пункт 1</li>
+        <li>Пункт 2</li>
+        <ul id="ul1">
+            <li>Подпункт 1</li>
+            <li>Подпункт 2</li>
+        </ul>
+        <li>Пункт 3</li>
+    </ol>
+    <br>
+    <ul>
+        <li><a href="https://google.com">Google</a></li>
+        <li><a href="https://facebook.com">Facebook</a></li>
+        <li><a href="https://amazon.com">Amazon</a></li>
+    </ul>
+    <button>Нажми на меня</button>
+    <br>
+    <div id="container1">
+        <div>1. Вот пример текста внутри див Флексбокса.</div>
+        <div>2. Вот пример текста внутри див Флексбокса.</div>
+        <div>3. Вот пример текста внутри див Флексбокса.</div>
+        <div>4. Вот пример текста внутри див Флексбокса.</div>
+        <div>5. Вот пример текста внутри див Флексбокса.</div>
+        <div>6. Вот пример текста внутри див Флексбокса.</div>
+        <div>7. Вот пример текста внутри див Флексбокса.</div>
+        <div>8. Вот пример текста внутри див Флексбокса.</div>
+        <div>9. Вот пример текста внутри див Флексбокса.</div>
+        <div>10. Вот пример текста внутри див Флексбокса.</div>
+        <div>11. Вот пример текста внутри див Флексбокса.</div>
+        <div>12. Вот пример текста внутри див Флексбокса.</div>
+    </div>
+    <div id="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="row">
+            <div class="col-3">
+                Первая секция.
+            </div>
+            <div class="col-3">
+                Вторая секция.
+            </div>
+            <div class="col-3">
+                Третья секция.
+            </div>
+            <div class="col-3">
+                Четвертая секция.
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                Первая секция.
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                Вторая секция.
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                Третья секция.
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                Четвертая секция.
+            </div>
+        </div>
+    </div>
+    <br>
+    Списки:
+    <ul id="ul2">
+        <li>Элемент 1</li>
+        <li>Элемент 2</li>
+        <li>Элемент 3</li>
+    </ul>
+    <ol id="ol2">
+        <li>Элемент 1</li>
+        <li>Элемент 2</li>
+        <li>Элемент 3</li>
+    </ol>
+    <br>
+    <form>
+        <div class="success">
+            Успешно выполнено!
+        </div>
+        <div class="warning">
+            Частично выполнено!
+        </div>
+        <div class="error">
+            Возникла ошибка!
+        </div>
+    </form>
+</body>
+</html>
